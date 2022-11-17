@@ -1,0 +1,19 @@
+##
+ # bind_to_fortress.mcfunction
+ # 
+ # Set Vex's bound nbt to nearest fortress
+ # Caller should provide vex as executer
+ # Created by Galdeveer.
+##
+
+# only works if vex already has bound nbt so y has a value
+
+loot replace entity @s armor.head loot soul_poe:locate_fortress
+
+# armor.head is ArmorItems[3]
+
+data modify entity @s BoundX set from entity @s ArmorItems[3].tag.Decorations[0].x
+data modify entity @s BoundZ set from entity @s ArmorItems[3].tag.Decorations[0].z
+data modify entity @s BoundY set value 64
+
+item replace entity @s armor.head with air

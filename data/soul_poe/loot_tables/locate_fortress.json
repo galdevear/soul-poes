@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:map",
+            "functions": [
+              {
+                "function": "minecraft:exploration_map",
+                "zoom": 3,
+                "destination": "desert_pyramid",
+                "decoration": "red_x",
+                "search_radius": 31,
+                "skip_existing_chunks": false
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{map:1}"
+              },
+              {
+                "function": "set_name",
+                "name": "aao"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

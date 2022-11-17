@@ -1,0 +1,1 @@
+Find better way to test for vexes which are soul poe's without sacrificing efficiency.
