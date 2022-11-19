@@ -11,6 +11,9 @@
 execute if entity @s[type=#soul_poe:skeletons,tag=!soul_poe.skeleton,tag=!soul_poe.w_skeleton,tag=!global.ignore,tag=!global.ignore.pos] run function soul_poe:init_skeletons
 execute if entity @s[type=#soul_poe:skeletons,tag=soul_poe.replace] run function soul_poe:replace_entity_with_poe
 
+# Bats #
+execute at @s if entity @s[type=bat, tag=!soul_poe.mineshaft.bat, tag=!global.ignore, tag=!global.ignore.pos, predicate=soul_poe:in_mineshaft] run function soul_poe:mineshaft/init_bat
+
 # Vex #
 execute if entity @s[type=vex,tag=soul_poe.util.bind_vex,tag=!global.ignore.pos] run function soul_poe:util/bind_vex
 execute if entity @s[type=vex,tag=soul_poe.poe] if predicate soul_poe:is_glowing run function soul_poe:fix_glowing

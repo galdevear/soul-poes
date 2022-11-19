@@ -1,0 +1,17 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "structure": "minecraft:mineshaft"
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "structure": "minecraft:mineshaft_mesa"
+            }
+        }
+    ]
+}
