@@ -1,0 +1,82 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:lantern",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{BlockStateTag:{hanging:\"false\"}}"
+                },
+                {
+                  "function": "minecraft:set_lore",
+                  "lore": [
+                    {
+                      "text": "Floats when hung",
+                      "italic": false,
+                      "color": "gray"
+                    }
+                  ]
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:damage_source_properties",
+                  "predicate": {
+                    "is_explosion": false,
+                    "is_fire": false,
+                    "is_magic": false,
+                    "is_projectile": false,
+                    "is_lightning": false,
+                    "bypasses_armor": false,
+                    "bypasses_invulnerability": false,
+                    "bypasses_magic": false,
+                    "source_entity": {
+                      "equipment": {
+                        "mainhand": {
+                          "enchantments": [
+                            {
+                              "enchantment": "minecraft:silk_touch"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:coal",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "min": 0,
+                    "max": 2
+                  }
+                },
+                {
+                  "function": "minecraft:looting_enchant",
+                  "count": {
+                    "min": 0,
+                    "max": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

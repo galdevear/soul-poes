@@ -9,7 +9,7 @@
             ]
           },
           "entity": {
-            "type": "minecraft:vex",
+            "type": "#soul_poe:poes",
             "passenger": {
               "type": "potion"
             }

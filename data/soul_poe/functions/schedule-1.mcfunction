@@ -12,7 +12,8 @@ execute if entity @s[type=#soul_poe:skeletons,tag=!soul_poe.skeleton,tag=!soul_p
 execute if entity @s[type=#soul_poe:skeletons,tag=soul_poe.replace] run function soul_poe:replace_entity_with_poe
 
 # Bats #
-execute at @s if entity @s[type=bat, tag=!soul_poe.mineshaft.bat, tag=!global.ignore, tag=!global.ignore.pos, predicate=soul_poe:in_mineshaft] run function soul_poe:mineshaft/init_bat
+execute at @s if entity @s[type=bat, tag=!soul_poe.mineshaft.bat, tag=!global.ignore, tag=!global.ignore.pos] run function soul_poe:mineshaft/init_bat
+execute if entity @s[type=bat,tag=soul_poe.poe] if predicate soul_poe:is_glowing run function soul_poe:fix_glowing
 
 # Vex #
 execute if entity @s[type=vex,tag=soul_poe.util.bind_vex,tag=!global.ignore.pos] run function soul_poe:util/bind_vex
@@ -23,6 +24,7 @@ execute if entity @s[type=vex,tag=soul_poe.poe] if predicate soul_poe:is_glowing
 execute if entity @s[type=potion,tag=soul_poe.lanternProj.new] run function soul_poe:init_lantern_projectile
 # Countdown and eventually clear glow
 execute if entity @s[type=potion,tag=soul_poe.lanternProj] if score @s soul_poes.glowTimer matches 0.. run function soul_poe:end_glowing
-# Absorb host's glow
+
+# Projectile glow for skeletal poes
 execute if entity @s[type=#soul_poe:skeletons,tag=soul_poe.skeleton_jockey] if predicate soul_poe:is_glowing run function soul_poe:fix_glowing
 execute if entity @s[type=#soul_poe:skeletons,tag=soul_poe.wskeleton_jockey] if predicate soul_poe:is_glowing run function soul_poe:fix_glowing
