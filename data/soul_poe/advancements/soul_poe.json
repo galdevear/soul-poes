@@ -1,7 +1,7 @@
 {
   "display": {
     "title": "Soul Poe",
-    "description": "Adds the Soul Poe mob and its skeletal variants.",
+    "description": "Adds lantern wisps and their variants.",
     "icon": {
       "item": "soul_lantern"
     },
