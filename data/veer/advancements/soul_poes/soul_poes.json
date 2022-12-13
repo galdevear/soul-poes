@@ -1,0 +1,18 @@
+{
+  "display": {
+    "title": "Soul Poes",
+    "description": "Adds lantern wisps and their variants.",
+    "icon": {
+      "item": "soul_lantern"
+    },
+    "background": "minecraft:textures/block/black_concrete_powder.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "global:veer",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

@@ -1,2 +1,0 @@
-function soul_poe:mineshaft/summon_poe
-function soul_poe:remove_entity

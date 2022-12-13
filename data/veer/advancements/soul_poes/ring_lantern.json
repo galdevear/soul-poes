@@ -1,0 +1,29 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:item_used_on_block",
+        "conditions": {
+          "location": {
+            "light": {
+              "light": {
+                "max": 9,
+                "min": 9
+              }
+            },
+            "block": {
+              "blocks": [
+                "minecraft:bell"
+              ],
+              "state": {
+                "attachment": "ceiling"
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "veer:soul_poes/ring_lantern"
+    }
+  }
+  

@@ -1,0 +1,1 @@
+execute if predicate veer:soul_poes/mineshaft/poe_spawn_chance at @s if predicate veer:soul_poes/in_mineshaft run function veer:soul_poes/mineshaft_poe/replace
