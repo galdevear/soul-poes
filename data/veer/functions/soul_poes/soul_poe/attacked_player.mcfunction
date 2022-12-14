@@ -1,6 +1,6 @@
 ###########################################################
 # Author: Galdevear
-# Date: 12.31.2020
+# Date: 12/14/2022
 #
 # Desc: Gives wither effect and revokes advancement so it can trigger again.
 ###########################################################

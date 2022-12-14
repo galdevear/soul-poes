@@ -1,5 +1,5 @@
 ##
- # init_soul_glow.mcfunction
+ # Date 12/14/22
  # Created by Galdeveer.
 ##
 #declare tag veer.soul_poes.join_aqua

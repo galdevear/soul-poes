@@ -23,7 +23,7 @@
       }
     },
     "rewards": {
-      "function": "veer:soul_poes/ring_lantern"
+      "function": "veer:soul_poes/ring/ring_lantern"
     }
   }
   

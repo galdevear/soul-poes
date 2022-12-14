@@ -10,15 +10,13 @@
           },
           "entity": {
             "type": "#veer:soul_poes/poes",
-            "passenger": {
-              "type": "potion"
-            }
+            "nbt": "{Tags:[\"veer.soul_poes.fix_nametag.vehicle\"]}"
           }
         }
       }
     },
     "rewards": {
-        "function": "veer:soul_poes/nametag_poe"
+        "function": "veer:soul_poes/nametag/fix_nametag"
     }
   }
   

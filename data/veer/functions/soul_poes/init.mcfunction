@@ -1,7 +1,5 @@
 ##
- # init.mcfunction
- # 
- #
+ # Date: 12/14/2022
  # Created by Galdeveer.
 ##
 
