@@ -5,9 +5,9 @@
  # Created by Galdeveer.
 ##
 
-#declare team veer.soul_poes.aqua_glow
-team add veer.soul_poes.aqua_glow
-team modify veer.soul_poes.aqua_glow color aqua
+#declare team veer.soul_poes.aqua
+team add veer.soul_poes.aqua
+team modify veer.soul_poes.aqua color aqua
 
 ##Scoreboard
 #declare objective veer.soul_poes.glowTimer
