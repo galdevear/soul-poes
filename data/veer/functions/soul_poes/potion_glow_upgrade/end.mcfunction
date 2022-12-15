@@ -1,0 +1,1 @@
+data modify entity @s Item.tag.CustomPotionEffects[0].Amplifier set value 0b

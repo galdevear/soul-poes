@@ -9,7 +9,7 @@
             ]
           },
           "entity": {
-            "type": "#veer:soul_poes/poes",
+            "type": "#veer:soul_poes/full_proj_model",
             "nbt": "{Tags:[\"veer.soul_poes.fix_nametag.vehicle\"]}"
           }
         }
