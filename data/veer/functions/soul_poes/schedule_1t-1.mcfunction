@@ -1,2 +1,2 @@
 ## Transfer glowing from vehicle to passenger
-execute if entity @s[type=#veer:soul_poes/fix_glowing,tag=veer.soul_poes.fix_glowing.vehicle] if predicate veer:soul_poes/is_glowing run function veer:soul_poes/glowing/fix_glowing
+execute if entity @s[type=#veer:soul_poes/fix_glowing/vehicle,tag=veer.soul_poes.fix_glowing.vehicle] if predicate veer:soul_poes/is_glowing run function veer:soul_poes/fix_glowing/detect

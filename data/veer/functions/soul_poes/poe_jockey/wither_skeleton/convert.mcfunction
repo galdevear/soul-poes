@@ -9,9 +9,9 @@
 #Tags on summoned mob won't stay, but tags from mob being merged over will be added one tick after the respective tag nbt is added because it needs a tick to sync up.
 tag @s remove veer.soul_poes.init_ssv_skeleton.jockey
 tag @s add veer.soul_poes.fix_glowing.vehicle
-tag @s add veer.soul_poes.fix_glowing.soul_particles
+tag @s add veer.soul_poes.fix_nametag.vehicle
 
 # Summon poe jockey
-summon wither_skeleton ~ ~ ~ {Tags:["veer.soul_poes.wither_skeleton_jockey.new"],Attributes:[{Name:"generic.movement_speed",Base:0.25, Modifiers:[{Amount:0.1, Name:"veer.soul_poes.poe_jockey_wskel.speedBoost", Operation:0, UUID:[I;3456,1870,487,19687]}]}],Passengers:[{id:"minecraft:potion",Tags:["global.ignore","veer.soul_poes","veer.soul_poes.fix_glowing.passenger","veer.soul_poes.join_aqua"],Item:{id:"minecraft:soul_lantern",Count:1b,tag:{CustomPotionColor:2409983,CustomPotionEffects:[{Id:1b,Amplifier:0b,Duration:280}],CustomModelData:5444819}}}]}
+summon wither_skeleton ~ ~ ~ {Tags:["veer.soul_poes.wither_skeleton_jockey.new"],Attributes:[{Name:"generic.movement_speed",Base:0.25, Modifiers:[{Amount:0.1, Name:"veer.soul_poes.poe_jockey_wskel.speedBoost", Operation:0, UUID:[I;3456,1870,487,19687]}]}],Passengers:[{id:"minecraft:potion",Tags:["global.ignore","veer.soul_poes","veer.soul_poes.fix_glowing.passenger","veer.soul_poes.fix_nametag.passenger","veer.soul_poes.share_glow.soul","veer.soul_poes.ring.passenger","veer.soul_poes.join_aqua","veer.soul_poes.potion.glow_upgrade"],Item:{id:"minecraft:soul_lantern",Count:1b,tag:{CustomPotionColor:2409983,CustomPotionEffects:[{Id:1b,Amplifier:0b,Duration:280}],CustomModelData:5444819}}}]}
 # Move everything from original mob to the new one.
 data modify entity @e[type=wither_skeleton,tag=veer.soul_poes.wither_skeleton_jockey.new,limit=1] {} merge from entity @s {}

@@ -6,8 +6,6 @@
 #declare tag veer.soul_poes.new
 #declare tag global.ignore
 #declare tag global.ignore.pos
-#declare tag veer.soul_poes.fix_glowing.vehicle
-#declare tag veer.soul_poes.fix_glowing.passenger
 
 ## New entities
 tag @s[tag=veer.soul_poes.new] remove veer.soul_poes.new
@@ -27,14 +25,14 @@ execute if entity @s[type=potion,tag=veer.soul_poes.join_aqua] run function veer
 execute if entity @s[type=vex,tag=veer.soul_poes.util.bind_vex] run function veer:soul_poes/util/bind_vex
 
 ## Share Glow (Soul variants)
-execute if entity @s[type=#veer:soul_poes/share_glow/soul, tag=veer.soul_poes.share_glow.soul] if score @s veer.soul_poes.glowTimer matches 10 run function veer:soul_poes/share_glow/soul/detect
+execute if entity @s[type=#veer:soul_poes/share_glow/soul, tag=veer.soul_poes.share_glow.soul] if score @s veer.soul_poes.glowTimer matches 9 run function veer:soul_poes/share_glow/soul/detect
 
 ## Share Glow (Mineshaft variants)
-execute if entity @s[type=#veer:soul_poes/share_glow/mineshaft, tag=veer.soul_poes.share_glow.mineshaft] if score @s veer.soul_poes.glowTimer matches 10 run function veer:soul_poes/share_glow/mineshaft/detect
+execute if entity @s[type=#veer:soul_poes/share_glow/mineshaft, tag=veer.soul_poes.share_glow.mineshaft] if score @s veer.soul_poes.glowTimer matches 9 run function veer:soul_poes/share_glow/mineshaft/detect
 
 ## Upgrade potion
 execute if entity @s[type=potion, tag=veer.soul_poes.potion.glow_upgrade] if score @s veer.soul_poes.glowTimer matches 10 run function veer:soul_poes/potion_glow_upgrade/start
 execute if entity @s[type=potion, tag=veer.soul_poes.potion.glow_upgrade] if score @s veer.soul_poes.glowTimer matches 0 run function veer:soul_poes/potion_glow_upgrade/end
 
 ## Simulate Glowing Duration
-execute if entity @s[type=potion,tag=veer.soul_poes.fix_glowing.passenger] if score @s veer.soul_poes.glowTimer matches 0.. run function veer:soul_poes/glowing/end_glowing
+execute if entity @s[type=potion,tag=veer.soul_poes.fix_glowing.passenger] if score @s veer.soul_poes.glowTimer matches 0.. run function veer:soul_poes/fix_glowing/decrement
