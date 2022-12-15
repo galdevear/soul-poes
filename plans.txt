@@ -1,0 +1,8 @@
+Silence poes while glowing
+orange glow for mineshaft poe
+rename mineshaft poe miners poe
+Place marker on bell when placed to detect even redstone
+Make bell lantern dependent
+Check for lantern instead of light level
+Dynamic lighting for lantern wisps
+Add a way to spawn your own lantern wisps (Enchant it with a bottle of enchanting then kill it so it drops the enchanted lantern)
