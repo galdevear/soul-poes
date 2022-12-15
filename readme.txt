@@ -10,7 +10,7 @@ INSTALLING
 Go to .minecraft. Then open saves. Open the world folder you would like to add the datapack to. Then open the datapack folder. Drag and drop the datapack into there.
 
 Uninstalling:
-If you wish to uninstall the datapack run this command /function soul_poe:uninstall
+If you wish to uninstall the datapack run this command /function veer:soul_poes/uninstall
 Then, remove the datapack from your datapacks folder or simply disable the datapack. You can disable the datapack at the gui described in the installation section labeled 'Already made the world?'
 
 
