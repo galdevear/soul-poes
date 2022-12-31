@@ -12,7 +12,3 @@ Go to .minecraft. Then open saves. Open the world folder you would like to add t
 Uninstalling:
 If you wish to uninstall the datapack run this command /function veer:soul_poes/uninstall
 Then, remove the datapack from your datapacks folder or simply disable the datapack. You can disable the datapack at the gui described in the installation section labeled 'Already made the world?'
-
-
-Licensed under creative commons.
-CC BY-NC-SA 4.0
