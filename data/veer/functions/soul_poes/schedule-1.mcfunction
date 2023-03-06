@@ -13,7 +13,7 @@ tag @s[tag=!veer.soul_poes] add veer.soul_poes.new
 tag @s[tag=!veer.soul_poes] add veer.soul_poes
 
 ## New Skeleton/Wither Skeleton in soul sand valley
-execute at @s if entity @s[type=#veer:soul_poes/skeletons,tag=veer.soul_poes.new,tag=!global.ignore,tag=!global.ignore.pos,predicate=veer:soul_poes/soul_poe/spawn_chance,predicate=veer:soul_poes/in_soul_sand_valley] run function veer:soul_poes/replace_ssv_skeleton
+execute at @s if entity @s[type=#veer:soul_poes/skeletons,tag=veer.soul_poes.new,tag=!global.ignore,tag=!global.ignore.pos,predicate=veer:soul_poes/soul_poe/spawn_chance,predicate=veer:soul_poes/in_soul_sand_valley] run function veer:soul_poes/poe_jockey/replace_ssv_skeleton
 
 ## New Bats in mineshaft
 execute at @s if entity @s[type=bat,tag=veer.soul_poes.new,tag=!global.ignore,tag=!global.ignore.pos,predicate=veer:soul_poes/mineshaft_poe/spawn_chance,predicate=veer:soul_poes/in_mineshaft] run function veer:soul_poes/mineshaft_poe/replace
