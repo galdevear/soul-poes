@@ -1,0 +1,2 @@
+function veer:soul_poes/poe_jockey/skeleton_mineshaft/convert
+function veer:soul_poes/util/remove_entity
